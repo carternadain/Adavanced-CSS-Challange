@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background:ivory;
+    width:100%;
+    margin: 0;
+}
+
+
+.container{
+   
+    width: 100%;
+    height: fit-content;
+    background-image:url('/assets/images/sand.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+   
+}
+
+/* Navagation */
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 60px;
+    width: 75px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+   
+}
+
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    font-size: 14px; 
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+
+.col {
+    flex-basis: 50%;
+}
+
+/* About Me */
+
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+
+
+p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+/* Card secetion with each project */
+
+.card {
+    display:inline-block;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 55px 45px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+    font-size: 20px;
+}
+
+.card1{
+    width: 86%;
+    height: 50%;
+    background-image: url(/assets/images/work1.JPG);
+}
+
+.card2{
+    width: 41%;
+    height: 20%;
+    background-image: url(/assets/images/work2.JPG);
+    
+}
+.card3{
+    width: 41%;
+    height: 20%;
+    background-image: url(/assets/images/work3.JPG);
+}
+.card4{
+    width: 86%;
+    height: 50%;
+    background-image: url(/assets/images/work4.JPG);
+    
+}
+.card:hover{
+    
+    transform: translateY(-10px);
+}
+
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 5px #999;
+    font-size: 8px;
+}
+
+.container2 {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Avatar with Info */
+.img {
+
+    max-width: 25%;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+.img.col{
+    flex-basis: 40%;
+}
+
+.img-col {
+    display: flex;
+    
+}
+/* Text about myself */
+
+h2 {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 15px;
+}
+
+/* My contact info */
+.contact {
+    color: #fff;
+    text-align: center;
+  
+}
+
+.contact a{
+    color:#fff;
+  
+}
+
+/* Link to Code Refractor project */
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* For tablets and smaller */
+@media screen and (max-width: 768px) {
+    .row { 
+        flex-direction: column;
+
+    }
+    .logo { 
+        flex-direction: column;
+        font-size: 35px;
+        
+    }
+    .cards { 
+        flex-direction: column;
+        
+    }
+   
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .container{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    }
+}
